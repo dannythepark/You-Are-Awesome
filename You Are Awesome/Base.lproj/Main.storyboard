@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,11 +12,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="You_Are_Awesome" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llT-eI-1ic">
-                                <rect key="frame" x="16" y="71" width="382" height="83"/>
+                                <rect key="frame" x="16" y="27" width="343" height="83"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="83" id="LnS-ML-tMl"/>
                                     <constraint firstAttribute="width" constant="343" id="zBU-Tm-Ch2"/>
@@ -25,15 +25,15 @@
                                 <color key="textColor" red="0.54117647059999996" green="0.062745098040000002" blue="0.043137254899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="xrm-PH-Rqx">
-                                <rect key="frame" x="16" y="162" width="382" height="529"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xrm-PH-Rqx">
+                                <rect key="frame" x="16" y="118" width="343" height="529"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="529" id="KEN-lI-ydJ"/>
                                     <constraint firstAttribute="width" constant="343" id="VtU-rw-fh4"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pb9-iB-Yhv">
-                                <rect key="frame" x="97" y="162" width="219" height="52"/>
+                                <rect key="frame" x="97" y="118" width="180" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="WWd-FR-XfK"/>
                                     <constraint firstAttribute="height" constant="52" id="g7n-sa-oLv"/>
@@ -69,7 +69,4 @@
             <point key="canvasLocation" x="125.59999999999999" y="105.69715142428787"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="img1" width="120" height="120"/>
-    </resources>
 </document>
