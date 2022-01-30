@@ -1,7 +1,7 @@
 //
 //  ViewController.swift
 //  You Are Awesome
-//  Directory Update 
+//  Directory Update //
 //
 //  Created by Danny Park on 1/23/22. UPDATE
 //
