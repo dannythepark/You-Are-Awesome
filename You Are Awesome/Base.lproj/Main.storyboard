@@ -15,53 +15,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llT-eI-1ic">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Placeholder" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llT-eI-1ic">
                                 <rect key="frame" x="16" y="27" width="343" height="83"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="83" id="LnS-ML-tMl"/>
-                                    <constraint firstAttribute="width" constant="343" id="zBU-Tm-Ch2"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                                 <color key="textColor" red="0.54117647059999996" green="0.062745098040000002" blue="0.043137254899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xrm-PH-Rqx">
-                                <rect key="frame" x="16" y="118" width="343" height="529"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="529" id="KEN-lI-ydJ"/>
-                                    <constraint firstAttribute="width" constant="343" id="VtU-rw-fh4"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xrm-PH-Rqx">
+                                <rect key="frame" x="16" y="178" width="343" height="469"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pb9-iB-Yhv">
-                                <rect key="frame" x="97" y="118" width="180" height="52"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="WWd-FR-XfK"/>
-                                    <constraint firstAttribute="height" constant="52" id="g7n-sa-oLv"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pb9-iB-Yhv">
+                                <rect key="frame" x="179" y="118" width="180" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Show Message"/>
                                 <connections>
                                     <action selector="messageButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P2t-BC-cEM"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Play Sound:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wbf-PR-hyc">
+                                <rect key="frame" x="16" y="124" width="90" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lOu-7P-yaO">
+                                <rect key="frame" x="114" y="127" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="playSoundToggled:" destination="BYZ-38-t0r" eventType="valueChanged" id="hfx-LB-HoP"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.86274509799999999" green="0.79215686269999996" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="xrm-PH-Rqx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5iw-Rk-rKW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xrm-PH-Rqx" secondAttribute="trailing" constant="16" id="6FS-Lv-guF"/>
-                            <constraint firstItem="llT-eI-1ic" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="9W1-5S-f3V"/>
-                            <constraint firstItem="pb9-iB-Yhv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="DvY-9D-nBE"/>
-                            <constraint firstItem="llT-eI-1ic" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="EYY-dI-7db"/>
-                            <constraint firstItem="xrm-PH-Rqx" firstAttribute="top" secondItem="llT-eI-1ic" secondAttribute="bottom" constant="8" id="XFm-pI-cZi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pb9-iB-Yhv" secondAttribute="trailing" constant="98" id="i3t-je-ogx"/>
-                            <constraint firstItem="pb9-iB-Yhv" firstAttribute="top" secondItem="llT-eI-1ic" secondAttribute="bottom" constant="8" id="jpn-5u-v2a"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="llT-eI-1ic" secondAttribute="trailing" constant="16" id="ugG-RV-Cs0"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="xrm-PH-Rqx" id="Y7w-KF-fEv"/>
                         <outlet property="messageLabel" destination="llT-eI-1ic" id="iPU-14-PHd"/>
+                        <outlet property="playSoundSwitch" destination="lOu-7P-yaO" id="R7p-Ro-osf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
